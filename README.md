@@ -4,7 +4,7 @@
 - HTML <br>
 - CSS <br>
 - Javascript <br>
-- Codeforces API <br>
+- Codeforces API (https://codeforces.com/apiHelp) <br>
 
 <br>
 
