@@ -1,0 +1,118 @@
+/* * {border: 1px solid blue; } */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --font: 'Roboto Mono', Courier, monospace;
+
+    --bold: 900;
+    --semibold: 700;
+    --normal: 500; 
+
+    --heading: 30px;
+    --subheading: 20px;
+    --normalsize: 18px;
+
+    --purple: #32266f;
+    --white: #f8f7f8;
+    --black: #1e1e1e;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: var(--normalsize);
+    font-family: var(--font);
+    font-weight: var(--bold);
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.container,
+.leaderboard,
+.heading,
+.batchwise, 
+.batch,
+.bname,
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    padding: 30px;
+    min-height: 100vh;
+}
+
+.leaderboard {
+    flex-direction: row;
+    width: 100%;
+    gap: 50px
+}
+
+.logo {
+    background: url("./Logo.png");
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+}
+
+.heading > * {
+    padding: 5px;
+}
+
+.title {
+    font-size: var(--heading);
+}
+
+.contestname { 
+    font-size: var(--subheading);
+}
+
+.batchwise {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 10px;
+}
+
+.batch {
+    min-height: 400px;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid var(--black);
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.bname {
+    padding: 10px;
+    margin: 10px;
+    font-size: var(--subheading);
+}
+
+hr {
+    width: 95%;
+    border-top: 3px solid var(--black);
+}
+
+.list {
+    padding: 10px;
+    margin: 10px;
+    width: 290px;
+}
+
+.account {
+    width: 100%;
+    padding: 5px;
+}
